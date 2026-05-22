@@ -1,6 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
-import 'swiper/css/autoplay'
 
 import { Autoplay } from 'swiper/modules'
 export default function SPMBSchoolWebsite() {
@@ -86,6 +85,42 @@ export default function SPMBSchoolWebsite() {
   </div>
 
 </section>
+<div className="py-10 bg-slate-100">
+
+  <Swiper
+    modules={[Autoplay]}
+    autoplay={{ delay: 3000 }}
+    loop={true}
+    className="max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-2xl"
+  >
+
+    <SwiperSlide>
+      <img
+        src="/images/slide1.jpg"
+        alt="Slide 1"
+        className="w-full h-[200px] md:h-[320px] object-cover"
+      />
+    </SwiperSlide>
+
+    <SwiperSlide>
+      <img
+        src="/images/slide2.jpg"
+        alt="Slide 2"
+        className="w-full h-[200px] md:h-[320px] object-cover"
+      />
+    </SwiperSlide>
+
+    <SwiperSlide>
+      <img
+        src="/images/slide3.jpg"
+        alt="Slide 3"
+        className="w-full h-[200px] md:h-[320px] object-cover"
+      />
+    </SwiperSlide>
+
+  </Swiper>
+
+</div>
 
       <section className="max-w-4xl mx-auto py-16 px-6">
         <div className="grid md:grid-cols-3 gap-6">
