@@ -1,36 +1,41 @@
 export default function SPMBSchoolWebsite() {
   const menu = [
-    {
-      title: 'Profil Sekolah',
-      content:
-        'SMP Negeri 1 Kangkung beralamat di Jl. Raden Patah Tanjungmojo Kangkung Kendal dengan visi Berkarakter, Berprestasi, Peduli Lingkungan.',
-    },
-    {
-      title: 'Jadwal SPMB',
-      content:
-        'Jadwal SPMB dapat diedit sesuai kebutuhan sekolah.',
-    },
-    {
-      title: 'Jalur SPMB',
-      content:
-        'Tersedia jalur Zonasi, Prestasi, dan Affirmasi.',
-    },
-    {
-      title: 'Prestasi Sekolah',
-      content:
-        'Prestasi sekolah dapat ditambahkan dan diedit kapan saja.',
-    },
-    {
-      title: 'Kegiatan Sekolah',
-      content:
-        'Sekolah memiliki berbagai kegiatan seperti Pramuka, OSIS, dan ekstrakurikuler lainnya.',
-    },
-    {
-      title: 'Kontak Sekolah',
-      content:
-        'WhatsApp sekolah: 081225339424',
-    },
-  ];
+  {
+    title: '👤 Profil Sekolah',
+    content:
+      'SMP Negeri 1 Kangkung beralamat di Jl. Raden Patah Tanjungmojo Kangkung Kendal.',
+  },
+
+  {
+    title: '📅 Jadwal SPMB',
+    content:
+      'Jadwal SPMB dapat diedit sesuai kebutuhan sekolah.',
+  },
+
+  {
+    title: '📚 Jalur SPMB',
+    content:
+      'Tersedia jalur Zonasi, Prestasi, dan Affirmasi.',
+  },
+
+  {
+    title: '🏆 Prestasi Sekolah',
+    content:
+      'Prestasi sekolah dapat ditambahkan dan diedit.',
+  },
+
+  {
+    title: '🎓 Kegiatan Sekolah',
+    content:
+      'Sekolah memiliki berbagai kegiatan siswa.',
+  },
+
+  {
+    title: '📞 Kontak Sekolah',
+    content:
+      'WhatsApp sekolah: 081225339424',
+  },
+]
 
   return (
     <div className="min-h-screen bg-slate-100 text-slate-800">
