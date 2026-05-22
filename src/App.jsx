@@ -34,9 +34,17 @@ export default function SPMBSchoolWebsite() {
             <h1 className="text-5xl font-bold leading-tight mb-6">
               Sistem Informasi SPMB
             </h1>
-            <h2 className="text-3xl font-semibold mb-4">
-              SMP Negeri 1 Kangkung
-            </h2>
+            <div className="flex items-center gap-4 mb-4">
+  <img
+    src="/images/logo.png"
+    alt="Logo Sekolah"
+    className="w-20 h-20 object-contain"
+  />
+
+  <h2 className="text-3xl font-semibold">
+    SMP Negeri 1 Kangkung
+  </h2>
+</div>
             <p className="text-lg opacity-90 mb-6">
               Website resmi informasi Sistem Penerimaan Murid Baru (SPMB)
               SMP Negeri 1 Kangkung.
