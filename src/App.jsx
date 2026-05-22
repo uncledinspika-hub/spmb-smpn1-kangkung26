@@ -49,8 +49,9 @@ export default function SPMBSchoolWebsite() {
 
   return (
     <div className="min-h-screen bg-slate-100 text-slate-800">
-      <section className="relative h-[300px] md:h-[500px] overflow-hidden rounded-b-3xl">
+      <section className="relative h-[280px] md:h-[450px] overflow-hidden rounded-b-3xl">
 
+  {/* VIDEO BACKGROUND */}
   <video
     autoPlay
     muted
@@ -64,23 +65,57 @@ export default function SPMBSchoolWebsite() {
     />
   </video>
 
-  <div className="absolute inset-0 bg-black/50"></div>
+  {/* OVERLAY */}
+  <div className="absolute inset-0 bg-black/60"></div>
 
-  <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-6">
+  {/* CONTENT */}
+  <div className="relative z-10 flex items-center justify-center h-full px-6">
 
-    <img
-      src="/images/logo.png"
-      alt="Logo Sekolah"
-      className="w-20 h-20 object-contain mb-6"
-    />
+    <div className="flex flex-col md:flex-row items-center gap-8 max-w-6xl">
 
-    <h1 className="text-3xl md:text-5xl font-bold mb-4">
-      SPMB SMP Negeri 1 Kangkung
-    </h1>
+      {/* LOGO */}
+      <img
+        src="/images/logo.png"
+        alt="Logo Sekolah"
+        className="w-20 h-20 md:w-40 md:h-40 object-contain"
+      />
 
-    <p className="text-xl md:text-2xl opacity-90">
-      Sistem Informasi Penerimaan Murid Baru
-    </p>
+      {/* TEXT */}
+      <div className="text-white text-center md:text-left">
+
+        <h1 className="text-3xl md:text-6xl font-bold mb-4">
+          SPMB SMP Negeri 1 Kangkung
+        </h1>
+
+        <p className="text-lg md:text-2xl mb-6 opacity-90">
+          Sistem Informasi Penerimaan Murid Baru
+        </p>
+
+        {/* VISI */}
+        <div className="mb-4">
+          <h2 className="text-xl font-semibold mb-1">
+            Visi
+          </h2>
+
+          <p className="opacity-90">
+            Berkarakter, Berprestasi, Peduli Lingkungan
+          </p>
+        </div>
+
+        {/* MISI */}
+        <div>
+          <h2 className="text-xl font-semibold mb-1">
+            Misi
+          </h2>
+
+          <p className="opacity-90">
+            Spika Berlian
+          </p>
+        </div>
+
+      </div>
+
+    </div>
 
   </div>
 
