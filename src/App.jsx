@@ -53,11 +53,11 @@ export default function SPMBSchoolWebsite() {
       </section>
 
       <section className="max-w-4xl mx-auto py-16 px-6">
-        <div className="space-y-6">
+        <div className="grid md:grid-cols-3 gap-6">
           {menu.map((item, index) => (
             <details
               key={index}
-              className="bg-white rounded-2xl shadow-lg p-6 cursor-pointer"
+              className="bg-white rounded-2xl shadow-lg p-6 cursor-pointer hover:shadow-2xl transition duration-300"
             >
               <summary className="text-2xl font-semibold text-blue-700">
                 {item.title}
