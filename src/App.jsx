@@ -74,21 +74,21 @@ export default function SPMBSchoolWebsite() {
   <SwiperSlide>
     <img
       src="/images/slide1.jpg"
-      className="w-full h-[400px] object-cover"
+      className="w-full h-[200px] md:h-[350px] object-cover rounded-3xl"
     />
   </SwiperSlide>
 
   <SwiperSlide>
     <img
       src="/images/slide2.jpg"
-      className="w-full h-[400px] object-cover"
+      className="w-full h-[200px] md:h-[350px] object-cover rounded-3xl"
     />
   </SwiperSlide>
 
   <SwiperSlide>
     <img
       src="/images/slide3.jpg"
-      className="w-full h-[400px] object-cover"
+      className="w-full h-[200px] md:h-[350px] object-cover rounded-3xl"
     />
   </SwiperSlide>
 </Swiper>
