@@ -2,36 +2,42 @@ export default function SPMBSchoolWebsite() {
   const menu = [
   {
     title: '👤 Profil Sekolah',
+    image: '/images/profil.png',
     content:
       'SMP Negeri 1 Kangkung beralamat di Jl. Raden Patah Tanjungmojo Kangkung Kendal.',
   },
 
   {
     title: '📅 Jadwal SPMB',
+    image: '/images/jadwal.jpg',
     content:
       'Jadwal SPMB dapat diedit sesuai kebutuhan sekolah.',
   },
 
   {
     title: '📚 Jalur SPMB',
+    image: '/images/jalur.png',
     content:
       'Tersedia jalur Zonasi, Prestasi, dan Affirmasi.',
   },
 
   {
     title: '🏆 Prestasi Sekolah',
+    image: '/images/prestasi.jpg',
     content:
       'Prestasi sekolah dapat ditambahkan dan diedit.',
   },
 
   {
     title: '🎓 Kegiatan Sekolah',
+    image: '/images/kegiatan.png',
     content:
       'Sekolah memiliki berbagai kegiatan siswa.',
   },
 
   {
     title: '📞 Kontak Sekolah',
+    image: '/images/kontak.jpg',
     content:
       'WhatsApp sekolah: 081225339424',
   },
@@ -61,17 +67,23 @@ export default function SPMBSchoolWebsite() {
         <div className="grid md:grid-cols-3 gap-6">
           {menu.map((item, index) => (
             <details
-              key={index}
-              className="bg-white rounded-2xl shadow-lg p-6 cursor-pointer hover:shadow-2xl transition duration-300"
-            >
-              <summary className="text-2xl font-semibold text-blue-700">
-                {item.title}
-              </summary>
+  key={index}
+  className="bg-white rounded-3xl shadow-lg overflow-hidden hover:scale-105 hover:shadow-2xl transition duration-300"
+>
+  <img
+    src={item.image}
+    alt={item.title}
+    className="w-full h-48 object-cover"
+  />
 
-              <p className="mt-4 text-lg text-slate-700">
-                {item.content}
-              </p>
-            </details>
+  <summary className="text-2xl font-semibold text-blue-700 p-6 cursor-pointer">
+    {item.title}
+  </summary>
+
+  <p className="px-6 pb-6 text-lg text-slate-700">
+    {item.content}
+  </p>
+</details>
           ))}
         </div>
 
