@@ -69,7 +69,7 @@ export default function SPMBSchoolWebsite() {
   modules={[Autoplay]}
   autoplay={{ delay: 3000 }}
   loop={true}
-  className="rounded-3xl overflow-hidden shadow-2xl mt-10"
+  className="max-w-2xl mx-auto rounded-3xl overflow-hidden shadow-2xl mt-10"
 >
   <SwiperSlide>
     <img
