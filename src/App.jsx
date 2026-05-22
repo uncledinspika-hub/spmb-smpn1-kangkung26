@@ -49,7 +49,7 @@ export default function SPMBSchoolWebsite() {
 
   return (
     <div className="min-h-screen bg-slate-100 text-slate-800">
-      <section className="relative h-screen overflow-hidden">
+      <section className="relative h-[300px] md:h-[500px] overflow-hidden rounded-b-3xl">
 
   <video
     autoPlay
@@ -71,10 +71,10 @@ export default function SPMBSchoolWebsite() {
     <img
       src="/images/logo.png"
       alt="Logo Sekolah"
-      className="w-32 h-32 object-contain mb-6"
+      className="w-20 h-20 object-contain mb-6"
     />
 
-    <h1 className="text-5xl md:text-7xl font-bold mb-4">
+    <h1 className="text-3xl md:text-5xl font-bold mb-4">
       SPMB SMP Negeri 1 Kangkung
     </h1>
 
