@@ -50,50 +50,42 @@ export default function SPMBSchoolWebsite() {
 
   return (
     <div className="min-h-screen bg-slate-100 text-slate-800">
-      <section className="bg-blue-700 text-white py-16 px-6 text-center">
-        <div className="max-w-4xl mx-auto">
-          <img
-            src="/images/logo.png"
-            alt="Logo Sekolah"
-            className="w-28 h-28 mx-auto mb-6 object-contain"
-          />
+      <section className="relative h-screen overflow-hidden">
 
-          <h1 className="text-4xl font-bold mb-4">
-            SPMB SMP Negeri 1 Kangkung
-          </h1>
-
-          <p className="text-lg opacity-90">
-            Sistem Informasi Penerimaan Murid Baru
-          </p>
-          <Swiper
-  modules={[Autoplay]}
-  autoplay={{ delay: 3000 }}
-  loop={true}
-  className="max-w-2xl mx-auto rounded-3xl overflow-hidden shadow-2xl mt-10"
->
-  <SwiperSlide>
-    <img
-      src="/images/slide1.jpg"
-      className="w-full h-[200px] md:h-[350px] object-cover rounded-3xl"
+  <video
+    autoPlay
+    muted
+    loop
+    playsInline
+    className="absolute w-full h-full object-cover"
+  >
+    <source
+      src="/videos/hero.mp4"
+      type="video/mp4"
     />
-  </SwiperSlide>
+  </video>
 
-  <SwiperSlide>
-    <img
-      src="/images/slide2.jpg"
-      className="w-full h-[200px] md:h-[350px] object-cover rounded-3xl"
-    />
-  </SwiperSlide>
+  <div className="absolute inset-0 bg-black/50"></div>
 
-  <SwiperSlide>
+  <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-6">
+
     <img
-      src="/images/slide3.jpg"
-      className="w-full h-[200px] md:h-[350px] object-cover rounded-3xl"
+      src="/images/logo.png"
+      alt="Logo Sekolah"
+      className="w-32 h-32 object-contain mb-6"
     />
-  </SwiperSlide>
-</Swiper>
-        </div>
-      </section>
+
+    <h1 className="text-5xl md:text-7xl font-bold mb-4">
+      SPMB SMP Negeri 1 Kangkung
+    </h1>
+
+    <p className="text-xl md:text-2xl opacity-90">
+      Sistem Informasi Penerimaan Murid Baru
+    </p>
+
+  </div>
+
+</section>
 
       <section className="max-w-4xl mx-auto py-16 px-6">
         <div className="grid md:grid-cols-3 gap-6">
