@@ -1,3 +1,8 @@
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/css'
+import 'swiper/css/autoplay'
+
+import { Autoplay } from 'swiper/modules'
 export default function SPMBSchoolWebsite() {
   const menu = [
   {
@@ -60,6 +65,33 @@ export default function SPMBSchoolWebsite() {
           <p className="text-lg opacity-90">
             Sistem Informasi Penerimaan Murid Baru
           </p>
+          <Swiper
+  modules={[Autoplay]}
+  autoplay={{ delay: 3000 }}
+  loop={true}
+  className="rounded-3xl overflow-hidden shadow-2xl mt-10"
+>
+  <SwiperSlide>
+    <img
+      src="/images/slide1.jpg"
+      className="w-full h-[400px] object-cover"
+    />
+  </SwiperSlide>
+
+  <SwiperSlide>
+    <img
+      src="/images/slide2.jpg"
+      className="w-full h-[400px] object-cover"
+    />
+  </SwiperSlide>
+
+  <SwiperSlide>
+    <img
+      src="/images/slide3.jpg"
+      className="w-full h-[400px] object-cover"
+    />
+  </SwiperSlide>
+</Swiper>
         </div>
       </section>
 
