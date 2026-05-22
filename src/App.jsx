@@ -80,9 +80,33 @@ export default function SPMBSchoolWebsite() {
     {item.title}
   </summary>
 
-  <p className="px-6 pb-6 text-lg text-slate-700">
+  <div className="px-6 pb-6">
+  <p className="text-lg text-slate-700 mb-4">
     {item.content}
   </p>
+
+  <div className="grid grid-cols-2 gap-4 mb-4">
+    <img
+      src="/images/profil1.jpg"
+      className="rounded-2xl shadow-lg"
+    />
+
+    <img
+      src="/images/profil2.jpg"
+      className="rounded-2xl shadow-lg"
+    />
+  </div>
+
+  <video
+    controls
+    className="w-full rounded-2xl"
+  >
+    <source
+      src="/videos/profil.mp4"
+      type="video/mp4"
+    />
+  </video>
+</div>
 </details>
           ))}
         </div>
