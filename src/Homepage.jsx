@@ -17,7 +17,7 @@ export default function HomePage() {
       <div className="text-center mb-10">
 
         <h1 className="text-5xl font-bold">
-          Website SPMB SMPN 1 Kangkung
+          WEBSITE BARU TEST VERCEL
         </h1>
 
       </div>
