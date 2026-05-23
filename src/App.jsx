@@ -120,6 +120,17 @@ export default function SPMBSchoolWebsite() {
   </div>
 
 </section>
+<div className="bg-yellow-400 text-black py-3 overflow-hidden">
+
+  <marquee
+    behavior="scroll"
+    direction="left"
+    className="font-semibold text-lg"
+  >
+    📢 Selamat Datang di Website SPMB SMP Negeri 1 Kangkung • Pendaftaran Dibuka Mulai 1 Juni 2026 • Jalur Zonasi, Prestasi, dan Affirmasi
+  </marquee>
+
+</div>
 <div className="py-10 bg-slate-100">
 
   <Swiper
@@ -154,7 +165,41 @@ export default function SPMBSchoolWebsite() {
     </SwiperSlide>
 
   </Swiper>
+<section className="py-16 px-6 bg-white">
 
+  <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6">
+
+    <div className="bg-blue-600 text-white rounded-3xl p-8 text-center shadow-xl">
+      <h2 className="text-4xl font-bold mb-2">
+        850+
+      </h2>
+      <p>Siswa</p>
+    </div>
+
+    <div className="bg-green-600 text-white rounded-3xl p-8 text-center shadow-xl">
+      <h2 className="text-4xl font-bold mb-2">
+        45+
+      </h2>
+      <p>Guru</p>
+    </div>
+
+    <div className="bg-yellow-500 text-white rounded-3xl p-8 text-center shadow-xl">
+      <h2 className="text-4xl font-bold mb-2">
+        25+
+      </h2>
+      <p>Prestasi</p>
+    </div>
+
+    <div className="bg-red-500 text-white rounded-3xl p-8 text-center shadow-xl">
+      <h2 className="text-4xl font-bold mb-2">
+        15+
+      </h2>
+      <p>Ekstrakurikuler</p>
+    </div>
+
+  </div>
+
+</section>
 </div>
 
       <section className="max-w-4xl mx-auto py-16 px-6">
@@ -219,6 +264,13 @@ export default function SPMBSchoolWebsite() {
       <footer className="bg-slate-900 text-white py-8 text-center">
         <p>© 2026 SMP Negeri 1 Kangkung</p>
       </footer>
+      <a
+  href="https://wa.me/6281225339424"
+  target="_blank"
+  className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl z-50 text-3xl"
+>
+  💬
+</a>
     </div>
   );
 }
